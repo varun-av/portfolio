@@ -2,14 +2,13 @@ import { Component, OnInit } from "@angular/core";
 import {
   trigger,
   transition,
-  query,
-  stagger,
-  animateChild,
   style,
   animate,
   keyframes,
   state,
 } from "@angular/animations";
+import { faEnvelope, faCloud } from "@fortawesome/free-solid-svg-icons";
+import { faSkype, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 @Component({
   selector: "app-root",
@@ -63,12 +62,16 @@ export class AppComponent implements OnInit {
     "assets/images/hype.png",
     "assets/images/d3.png",
     "assets/images/inkscape.png",
-    "assets/images/nodejs.png",
-    "assets/images/mongo.png",
+    // "assets/images/nodejs.png",
+    // "assets/images/mongo.png",
     "assets/images/aws.png",
   ];
   index = 0;
   image = "";
+  faEnvelope = faEnvelope;
+  faSkype = faSkype;
+  faLinkedIn = faLinkedin;
+  faCloud = faCloud;
 
   ngOnInit() {
     setInterval(() => {
