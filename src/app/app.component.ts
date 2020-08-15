@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, HostListener } from "@angular/core";
 import {
   trigger,
   transition,
@@ -114,10 +114,10 @@ export class AppComponent implements OnInit {
   bgState3 = "bottom";
   logo = [
     "assets/images/angular.png",
-    "assets/images/hype.png",
+    "assets/images/react.png",
     "assets/images/d3.png",
+    "assets/images/hype.png",
     "assets/images/inkscape.png",
-    "assets/images/aws.png",
   ];
   index = 0;
   image = "";
@@ -137,6 +137,27 @@ export class AppComponent implements OnInit {
       this.counter++;
     }
   }
+  @HostListener("window:scroll", ["$event"]) onScrollEvent($event) {
+    let position = { left: 0, top: 0 };
+    let scrollMeter = $event.target.scrollingElement.scrollTop;
+    // let grapher = document.getElementById("grapher");
+
+    if (scrollMeter == 0) {
+      // let grapher = document.getElementById("grapher");
+      // position.left = +grapher.getAttribute("left");
+      // position.top = +grapher.getAttribute("top");
+    }
+    if (scrollMeter >= 250 && scrollMeter < 450) {
+      // grapher.style.webkitTransform = "rotate(" + (450 - scrollMeter) + "deg)";
+      // grapher.style.webkitTransform =
+      // "translate(" + 350 + (450 - scrollMeter) + ",0)";
+    }
+    // console.log(scrollMeter);
+    // console.log(350 + (450 - scrollMeter));
+  }
+  // scrollGraph() {
+  //   console.log(document.body.scrollTop);
+  // }
 
   ngOnInit() {
     setInterval(() => {

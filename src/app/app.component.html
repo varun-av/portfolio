@@ -1,6 +1,6 @@
-<div class="main-container">
+<div class="landing-container">
   <div>
-    <img
+    <!-- <img
       class="circle1"
       src="assets/images/circle.svg"
       [@float]="{ value: bgState1, params: { timing: '2s' } }"
@@ -17,7 +17,7 @@
       src="assets/images/circle3.svg"
       [@float]="{ value: bgState3, params: { timing: '10s' } }"
       (@float.done)="onDone()"
-    />
+    /> -->
   </div>
   <div class="brand-content">
     <p>Hi!</p>
@@ -42,9 +42,11 @@
       style="filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4));"
     >
       <img
+        id="grapher"
         src="assets/images/grapher.png"
-        width="1000px"
+        width="100%"
         style="
+          transition: -webkit-transform 0.5s;
           margin: 10px;
           border-bottom: 5px solid #ececec;
           border-radius: 5px;
@@ -61,13 +63,9 @@
       style="filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4));"
     >
       <img
-        src="assets/images/grapher.png"
-        width="1000px"
-        style="
-          margin: 10px;
-          border-bottom: 5px solid #ececec;
-          border-radius: 5px;
-        "
+        src="assets/images/coup.png"
+        width="100%"
+        style="margin: 10px; border-radius: 5px;"
       />
     </div>
     <div class="one-third center">
@@ -75,6 +73,11 @@
         <h1 class="padding-20">Coup game</h1>
         <p class="padding-20">
           Coup is a real-time online multiplayer card based game. More info:
+          <a
+            href="https://boardgamegeek.com/boardgame/131357/coup"
+            target="_blank"
+            >Coup game</a
+          >
         </p>
       </div>
     </div>
@@ -83,8 +86,8 @@
 <mat-divider></mat-divider>
 <div class="main-container">
   <div class="divide center">
-    <div class="half center">
-      <div class="center column">
+    <div class="half center padding-40">
+      <div class="center column padding-20">
         <h1>What I can do</h1>
         <h5 class="padding-20">
           Design what you want. Develop what you need.
@@ -94,17 +97,16 @@
           Developing interactive websites and making them awesome with
           animations since 2016.
         </p>
-        <div
-          class="padding-20"
-          style="margin-top: 50px; height: 100px; width: 200px;"
-        >
+        <div class="center column padding-20" style="margin-top: 50px;">
           <img [src]="image" width="70" [@animate]="state" />
         </div>
       </div>
     </div>
-    <div class="half center">
-      <div class="center column">
-        <img src="assets/gif/profile2.gif" width="300" class="padding-20" />
+    <div class="half center padding-50">
+      <div class="center column padding-20">
+        <div class="center column padding-20" style="margin-top: 50px;">
+          <img src="assets/gif/profile2.gif" class="profile-gif padding-20" />
+        </div>
         <h1>About me</h1>
         <h5 class="padding-20">
           I'm based in Bengaluru, India.
@@ -119,16 +121,16 @@
     </div>
   </div>
 </div>
-<div class="footer-container padding-20">
+<div class="footer-container">
   <div class="center">
     <a href="mailto: varun.zark@yahoo.com" target="_blank">
       <fa-icon [icon]="faEnvelope" size="2x"></fa-icon></a
-    >&nbsp;
+    >&nbsp;&nbsp;
     <a href="skype:live:.cid.62f5af99a7f8d6b7?userinfo" target="_blank">
       <fa-icon [icon]="faSkype" size="2x"></fa-icon></a
-    >&nbsp;
+    >&nbsp;&nbsp;
     <a href="https://linkedin.com/in/avvarun" target="_blank">
       <fa-icon [icon]="faLinkedIn" size="2x"></fa-icon></a
-    >&nbsp;
+    >&nbsp;&nbsp;
   </div>
 </div>
