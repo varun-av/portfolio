@@ -1,58 +1,73 @@
-@media (max-width: 600px)
-    .responsive 
-        text-align: center
-    .responsive-image
-        text-align: center
+.main-container
+    width: 100%
+    height: 100vh
+    padding: 100px
 
+.footer-container
+    width: 100%
+    height: 100px
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) 
-    .responsive
-        text-align: center
-    .responsive-image
-        text-align: center
-    .w3-twothird
-        width: 100%
-    .w3-third
-        width: 100%
-        
+.center
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
 
+.bg-grey
+    background-color: lightgrey
+    color: white
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) 
-    .responsive 
-        text-align: center
-    .responsive-image
-        text-align: center
-    .w3-twothird
-        width: 100%
-    .w3-third
-        width: 100%
+.bg-cyan
+    background-color: lightcyan
+    color: black
 
+.circle1
+    position: absolute
+    left: 150px
+    top: 150px
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) 
-    .responsive 
-        text-align: left
-    .responsive-image
-        text-align: left
-    .w3-twothird
-        width: 66.6666%
-    .w3-third
-        width: 33.3333%
-        
+.circle2
+    position: absolute
+    left: 200px
+    top: 100px
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))
 
+.circle3
+    position: absolute
+    left: 600px
+    top: 120px
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px)
-    .responsive
-        text-align: left
-    .responsive-image
-        text-align: left
-    .w3-twothird
-        width: 66.6666%
-    .w3-third
-        width: 33.3333%
+.brand-content
+    position: absolute
+    left: 900px
+    top: 300px
+    font-size: 75px
+    text-align: center
+    font-family: sans-serif
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))
 
-div > fa-icon:hover
-    cursor: pointer
+.divide
+    width: 100%
+    height: 100%
+
+.two-third
+    width: 66.6666%
+    height: 100%
+
+.one-third
+    width: 33.3333%
+    height: 100%
+
+.column
+    width: 100%
+    height: 100%
+    flex-direction: column
+
+.padding-20
+    padding: 20px
+
+.half
+    width: 50%
+    height: 100%

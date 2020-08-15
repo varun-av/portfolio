@@ -7,8 +7,8 @@ import {
   keyframes,
   state,
 } from "@angular/animations";
-import { faEnvelope, faCloud } from "@fortawesome/free-solid-svg-icons";
 import { faSkype, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-root",
@@ -52,26 +52,91 @@ import { faSkype, faLinkedin } from "@fortawesome/free-brands-svg-icons";
         { params: { timing: "1s", delay: "" } }
       ),
     ]),
+    trigger("float", [
+      // state('top', style({transform: 'translateY(0)'})),
+      // state('bottom', style({transform: 'translateY(20px)'})),
+      transition(
+        "void=>top",
+        animate(
+          "{{timing}} {{delay}} cubic-bezier(0.215, 0.61, 0.355, 1)",
+
+          keyframes([
+            style({ transform: "translateY(0)", offset: 0 }),
+            style({ transform: "translateY(10px)", offset: 0.5 }),
+            style({ transform: "translateY(20px)", offset: 1 }),
+            // style({ transform: "translateY(-15px)", offset: 0.75 }),
+            // style({ transform: "translateY(-5px)", offset: 0.9 }),
+            // style({ transform: "translateY(0)", offset: 1 }),
+          ])
+        ),
+        { params: { timing: "", delay: "" } }
+      ),
+      transition(
+        "top=>bottom",
+        animate(
+          "{{timing}} {{delay}} cubic-bezier(0.215, 0.61, 0.355, 1)",
+
+          keyframes([
+            style({ transform: "translateY(0)", offset: 0 }),
+            style({ transform: "translateY(10px)", offset: 0.5 }),
+            style({ transform: "translateY(20px)", offset: 1 }),
+            // style({ transform: "translateY(-15px)", offset: 0.75 }),
+            // style({ transform: "translateY(-5px)", offset: 0.9 }),
+            // style({ transform: "translateY(0)", offset: 1 }),
+          ])
+        ),
+        { params: { timing: "", delay: "" } }
+      ),
+      transition(
+        "bottom=>top",
+        animate(
+          "{{timing}} {{delay}} cubic-bezier(0.215, 0.61, 0.355, 1)",
+
+          keyframes([
+            // style({ transform: "translateY(0)", offset: 0 }),
+            // style({ transform: "translateY(10px)", offset: 0.25 }),
+            // style({ transform: "translateY(20px)", offset: 0.5 }),
+            style({ transform: "translateY(20px)", offset: 0 }),
+            style({ transform: "translateY(10px)", offset: 0.5 }),
+            style({ transform: "translateY(0)", offset: 1 }),
+          ])
+        ),
+        { params: { timing: "", delay: "" } }
+      ),
+    ]),
   ],
 })
 export class AppComponent implements OnInit {
   title = "home";
   state = "invisible";
+  bgState1 = "bottom";
+  bgState2 = "bottom";
+  bgState3 = "bottom";
   logo = [
     "assets/images/angular.png",
     "assets/images/hype.png",
     "assets/images/d3.png",
     "assets/images/inkscape.png",
-    // "assets/images/nodejs.png",
-    // "assets/images/mongo.png",
     "assets/images/aws.png",
   ];
   index = 0;
   image = "";
+  times = 10;
+  counter = 0;
   faEnvelope = faEnvelope;
   faSkype = faSkype;
   faLinkedIn = faLinkedin;
-  faCloud = faCloud;
+
+  onDone() {
+    // call this function at the end of the previous animation.
+    // run it as many time as defined
+    if (this.counter < this.times) {
+      this.bgState1 = this.bgState1 === "top" ? "bottom" : "top";
+      this.bgState2 = this.bgState2 === "top" ? "bottom" : "top";
+      this.bgState3 = this.bgState3 === "top" ? "bottom" : "top";
+      this.counter++;
+    }
+  }
 
   ngOnInit() {
     setInterval(() => {
