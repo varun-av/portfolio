@@ -128,8 +128,6 @@ export class AppComponent implements OnInit {
   faLinkedIn = faLinkedin;
 
   onDone() {
-    // call this function at the end of the previous animation.
-    // run it as many time as defined
     if (this.counter < this.times) {
       this.bgState1 = this.bgState1 === "top" ? "bottom" : "top";
       this.bgState2 = this.bgState2 === "top" ? "bottom" : "top";
@@ -137,27 +135,6 @@ export class AppComponent implements OnInit {
       this.counter++;
     }
   }
-  @HostListener("window:scroll", ["$event"]) onScrollEvent($event) {
-    let position = { left: 0, top: 0 };
-    let scrollMeter = $event.target.scrollingElement.scrollTop;
-    // let grapher = document.getElementById("grapher");
-
-    if (scrollMeter == 0) {
-      // let grapher = document.getElementById("grapher");
-      // position.left = +grapher.getAttribute("left");
-      // position.top = +grapher.getAttribute("top");
-    }
-    if (scrollMeter >= 250 && scrollMeter < 450) {
-      // grapher.style.webkitTransform = "rotate(" + (450 - scrollMeter) + "deg)";
-      // grapher.style.webkitTransform =
-      // "translate(" + 350 + (450 - scrollMeter) + ",0)";
-    }
-    // console.log(scrollMeter);
-    // console.log(350 + (450 - scrollMeter));
-  }
-  // scrollGraph() {
-  //   console.log(document.body.scrollTop);
-  // }
 
   ngOnInit() {
     setInterval(() => {
