@@ -8,7 +8,10 @@ import {
   state,
 } from "@angular/animations";
 import { faSkype, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-root",
@@ -126,6 +129,7 @@ export class AppComponent implements OnInit {
   faEnvelope = faEnvelope;
   faSkype = faSkype;
   faLinkedIn = faLinkedin;
+  faExternalLink = faExternalLinkAlt;
 
   onDone() {
     if (this.counter < this.times) {

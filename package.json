@@ -1,11 +1,11 @@
 {
   "name": "home",
   "version": "0.0.0",
-  "homepage": "https://varun-av.github.io",
+  "homepage": "https://varun-av.github.io/portfolio",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href=/portfolio/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
