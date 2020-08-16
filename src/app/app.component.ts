@@ -107,7 +107,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
   ],
 })
 export class AppComponent implements OnInit {
-  title = "home";
+  title = "profile";
   state = "invisible";
   bgState1 = "bottom";
   bgState2 = "bottom";
