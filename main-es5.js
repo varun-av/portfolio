@@ -225,9 +225,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: AppComponent,
       selectors: [["app-root"]],
-      decls: 77,
+      decls: 76,
       vars: 5,
-      consts: [["src", "favicon.ico", 2, "position", "absolute", "z-index", "2", "padding", "20px", "filter", "drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))"], [1, "landing-container", 2, "background-color", "#4400aa"], [1, "divide", "center"], [1, "two-third"], ["src", "assets/images/we.png", 1, "landing-image"], [1, "one-third", "padding-40"], [1, "main-text1", "padding-20"], [1, "main-text2", "padding-20"], [1, "main-text3"], [1, "center", "padding-40", 2, "font-family", "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',\n      'Lucida Sans Unicode', Geneva, Verdana, sans-serif", "font-size", "50px"], [2, "border-radius", "30px", "padding", "20px"], [1, "main-container"], [1, "one-third", "center"], [1, "center", "column"], [1, "padding-20"], ["href", "https://varun-av.github.io/graphbuild/", "target", "_blank"], [1, "two-third", "center", 2, "filter", "drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))"], ["id", "grapher", "src", "assets/images/grapher.png", "width", "100%", 2, "transition", "-webkit-transform 0.5s", "margin", "10px", "border-bottom", "5px solid #ececec", "border-radius", "5px"], ["src", "assets/images/coup.png", "width", "100%", 2, "margin", "10px", "border-radius", "5px"], ["href", "https://boardgamegeek.com/boardgame/131357/coup", "target", "_blank"], ["href", "#", "target", "_blank"], [1, "half", "center", "padding-40"], [1, "center", "column", "padding-20"], [1, "center", "column", "padding-20", 2, "margin-top", "50px"], ["width", "70", 2, "filter", "drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))", 3, "src"], [1, "half", "center", "padding-50"], ["src", "assets/gif/profile.gif", 1, "profile-gif", "padding-20"], [1, "footer-container", 2, "background-color", "#4400aa", "color", "white"], [1, "center"], ["href", "mailto: varun.zark@yahoo.com", "target", "_blank"], ["size", "2x", 3, "icon"], ["href", "skype:live:.cid.62f5af99a7f8d6b7?userinfo", "target", "_blank"], ["href", "https://www.linkedin.com/in/avvarun", "target", "_blank"]],
+      consts: [["src", "favicon.ico", 2, "position", "absolute", "z-index", "2", "padding", "20px", "filter", "drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))"], [1, "landing-container", 2, "background-color", "#4400aa"], [1, "divide", "center"], [1, "two-third"], ["src", "assets/images/we.png", 1, "landing-image"], [1, "one-third", "padding-40"], [1, "main-text1", "padding-20"], [1, "main-text2", "padding-20"], [1, "main-text3"], [1, "center", "padding-40", 2, "font-family", "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',\n      'Lucida Sans Unicode', Geneva, Verdana, sans-serif", "font-size", "50px"], [2, "border-radius", "30px", "padding", "20px"], [1, "main-container"], [1, "one-third", "center"], [1, "center", "column"], [1, "padding-20"], ["href", "https://varun-av.github.io/graphbuild/", "target", "_blank"], [1, "two-third", "center", 2, "filter", "drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))"], ["id", "grapher", "src", "assets/images/grapher.png", "width", "100%", 2, "transition", "-webkit-transform 0.5s", "margin", "10px", "border-bottom", "5px solid #ececec", "border-radius", "5px"], ["src", "assets/images/coup.png", "width", "100%", 2, "margin", "10px", "border-radius", "5px"], ["href", "https://boardgamegeek.com/boardgame/131357/coup", "target", "_blank"], ["href", "#", "target", "_blank"], [1, "half", "center", "padding-40"], [1, "center", "column", "padding-20"], [1, "center", "column", "padding-20", 2, "margin-top", "50px"], ["width", "70", 2, "filter", "drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.4))", 3, "src"], [1, "half", "center", "padding-50"], ["src", "assets/gif/profile.gif", 1, "profile-gif", "padding-20"], [1, "footer-container", "center", 2, "background-color", "#4400aa", "color", "white"], ["href", "mailto: varun.zark@yahoo.com", "target", "_blank"], ["size", "2x", 3, "icon"], ["href", "skype:live:.cid.62f5af99a7f8d6b7?userinfo", "target", "_blank"], ["href", "https://www.linkedin.com/in/avvarun", "target", "_blank"]],
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "img", 0);
@@ -444,33 +444,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "div", 27);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "div", 28);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "a", 28);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "a", 29);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](69, "fa-icon", 30);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](68, "fa-icon", 29);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "\xA0\xA0 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, "\xA0\xA0 ");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "a", 31);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "a", 30);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](72, "fa-icon", 30);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "\xA0\xA0 ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "a", 32);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](75, "fa-icon", 30);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](71, "fa-icon", 29);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "\xA0\xA0 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, "\xA0\xA0 ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "a", 31);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](74, "fa-icon", 29);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, "\xA0\xA0\n");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
@@ -480,7 +476,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx.image, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"])("@animate", ctx.state);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("icon", ctx.faEnvelope);
 
